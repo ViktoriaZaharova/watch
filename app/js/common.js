@@ -40,3 +40,11 @@ $(document).ready(function () {
     });
 });
 //end
+
+$('.btn-burger').click(function () {
+   $('.mobile-menu').slideDown();
+});
+
+$('.menu-close').click(function () {
+    $('.mobile-menu').slideUp();
+});
