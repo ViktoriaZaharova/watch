@@ -1923,4 +1923,8 @@ footer {
   .page-title {
     margin: 40px auto 30px; }
   .article {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .politics {
+    padding: 0 0 50px; }
+    .politics p {
+      margin: 0 0 15px; } }
