@@ -288,9 +288,17 @@ header
   .container
     align-items: center
     justify-content: space-between
+  .phone-wrapper
+    a
+      color: #fff
 
 .header__top
   padding: 21px 0 17px
+  background: #3a3a3a
+  color: #fff
+
+.header__bottom
+  background: #3a3a3a
 
 .phone
   font-size: 20px
@@ -301,7 +309,9 @@ header
 
 .phone-wrapper
   display: flex
-  align-items: center
+  align-items: flex-start
+  flex-direction: column
+
 
 .phone__icon
   width: 20px
@@ -314,35 +324,55 @@ header
   align-items: center
   flex-wrap: wrap
 
-.header__box_phone
-  flex-direction: column
-  align-items: flex-start
-
 .header__box_icon
   display: flex
   align-items: center
   justify-content: center
-
-.header__box_address_icon
-  width: 19px
-  height: 26px
-  margin: 0 16px 0 0
+  background: #C7AB90
+  border-radius: 3px
+  width: 48px
+  min-width: 48px
+  height: 48px
+  padding: 10px
+  margin: 0 12px 0 0
   img
-    width: 100%
+    max-height: 100%
+
 
 .header__box_address_text
   max-width: 243px
   display: inline-block
 
 
-.header__box_schedule_icon
-  width: 22px
-  height: 22px
-  margin: 0 15px 0 0
-
 .header__box_schedule_text
   max-width: 185px
   display: inline-block
+
+.header__box_message
+  flex-direction: column
+  align-items: stretch
+
+.messenger
+  color: #fff
+  display: flex
+  align-items: center
+  margin: 0 0 6px
+  border: 2px solid #C7AB8E
+    radius: 3px
+  padding: 1.5px 20px
+  min-height: 30px
+  &:last-child
+    margin: 0
+  .header__box_icon
+    padding: 0
+    background: transparent
+    border-radius: 0
+    width: 20px
+    height: 20px
+    min-width: 20px
+  strong
+    font-weight: bold
+
 
 //menu
 .menu
@@ -356,7 +386,7 @@ header
   flex-wrap: wrap
 
 .menu__links
-  color: #212121
+  color: #fff
   font-size: 22px
   font-family: $play
   padding: 24px 0
@@ -696,7 +726,8 @@ header
 
 //footer
 footer
-  padding: 30px 0
+  padding: 50px 0
+  background: #F1F2F2
   .container
     justify-content: space-between
     align-items: center
@@ -713,6 +744,15 @@ footer
   align-items: center
   justify-content: space-between
   flex-wrap: wrap
+
+.footer-menu
+  li
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+    a
+      text-decoration: underline
+      color: #000000
 
 
 //modal
@@ -813,9 +853,14 @@ footer
 .contacts
   padding: 0 0 80px
   .header__box
+
     width: 50%
   .w-100
     width: 100%
+  .messenger
+    color: #000
+    width: fit-content
+
 
 .name-company
   width: 100%
@@ -1100,6 +1145,30 @@ footer
   z-index: 7
   padding: 30px 20px
   display: none
+  .header__box, .phone
+    font-size: 12px
+  .menu__links
+    color: #000
+    font-size: 14px
+  .header__box_message
+    justify-content: center
+    align-items: stretch
+    margin: 20px auto 0
+    max-width: 177px
+    width: 100%
+  .messenger
+    color: #000
+    font-size: 12px
+    padding: 0
+    border: none
+    .header__box_icon
+      width: 22px
+      height: 22px
+      min-width: 22px
+      padding: 5px
+      background: #C7AB90
+      border-radius: 4px
+
 
 .mobile-menu__menu
   width: 100%
@@ -1130,4 +1199,5 @@ footer
 
 
 @import "media"
+@import "page"
 // Всегда в конце

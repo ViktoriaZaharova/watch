@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мир часов</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="menu-close"></div>
+
+  <ul class="menu mobile-menu__menu">
+    <li class="menu__item"><a href="buying.html" class="menu__links">Скупка часов</a></li>
+    <li class="menu__item"><a href="appraisal.html" class="menu__links">Оценка часов</a></li>
+    <li class="menu__item"><a href="services.html" class="menu__links">Услуги</a></li>
+    <li class="menu__item"><a href="brands.html" class="menu__links">Бренды</a></li>
+    <li class="menu__item"><a href="about.html" class="menu__links">О ломбарде</a></li>
+    <li class="menu__item"><a href="contacts.html" class="menu__links">Контакты</a></li>
+  </ul>
+
+  <div class="header__box header__box_address">
+    <div class="header__box_icon header__box_address_icon"><img src="images/maps-and-flags.svg" alt=""></div>
+    <div class="header__box_address_text">г. Москва, Ленинградский
+      проспект, дом 76, к.1
+    </div>
+  </div>
+
+  <div class="header__box header__box_message">
+    <a href="tg://resolve?domain=<74959889233>" class="messenger">
+      <span class="header__box_icon"><img src="images/telegram2.svg" alt=""></span>
+      <span class="header__box_text">Написать в <strong>Telegram</strong></span>
+    </a>
+    <a href="https://wa.me/74959889233" class="messenger">
+      <span class="header__box_icon"><img src="images/whatsapp2.svg" alt=""></span>
+      <span class="header__box_text">Написать в <strong>Whatsapp</strong></span>
+    </a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+
+      <a href="/" class="logo">
+        <img src="images/logo.svg" alt="">
+      </a>
+
+      <div class="header__box header__box_phone">
+        <div class="header__box_icon">
+          <img src="images/phone-call.svg" alt="Продать часы">
+        </div>
+        <div class="phone-wrapper">
+          <a href="tel:+74951477778" class="phone">
+            <span class="phone__text">8 (495) 147-77-78</span>
+          </a>
+          <a href="tel:+79688889288" class="phone">
+            <span class="phone__text">8 (968) 888-92-88</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__box header__box_address">
+        <div class="header__box_icon header__box_address_icon"><img src="images/maps-and-flags.svg" alt="адрес"></div>
+        <div class="header__box_address_text">г. Москва, Ленинградский
+          проспект, дом 76, к.1
+        </div>
+      </div>
+
+
+      <div class="header__box header__box_message">
+        <a href="tg://resolve?domain=<74959889233>" class="messenger">
+          <span class="header__box_icon"><img src="images/telegram2.svg" alt=""></span>
+          <span class="header__box_text">Написать в <strong>Telegram</strong></span>
+        </a>
+        <a href="https://wa.me/74959889233" class="messenger">
+          <span class="header__box_icon"><img src="images/whatsapp2.svg" alt=""></span>
+          <span class="header__box_text">Написать в <strong>Whatsapp</strong></span>
+        </a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <ul class="menu">
+        <li class="menu__item"><a href="buying.html" class="menu__links">Скупка часов</a></li>
+        <li class="menu__item"><a href="appraisal.html" class="menu__links">Оценка часов</a></li>
+        <li class="menu__item"><a href="services.html" class="menu__links">Услуги</a></li>
+        <li class="menu__item"><a href="brands.html" class="menu__links">Бренды</a></li>
+        <li class="menu__item"><a href="about.html" class="menu__links">О ломбарде</a></li>
+        <li class="menu__item"><a href="contacts.html" class="menu__links">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="pawnshop-moscow bg-brown color-white">
+  <div class="container">
+
+    <form method="post" class="form form-appraisal">
+      <div class="wrapper-img"><img src="images/img10.png" alt=""></div>
+      <div class="form-group">
+        <h2>Ломбард часов <br>
+          в москве</h2>
+
+        <label><input type="text" placeholder="Имя" required name="name"></label>
+
+        <label><input type="text" placeholder="Телефон" required name="phone"></label>
+
+        <label><input type="text" placeholder="Модель часов" name="model_watch" required></label>
+        <button type="submit" class="btn btn-accent">Отправить</button>
+      </div>
+      <div class="file__upload file__upload-appraisal">
+        <label class="file__upload_label">
+                    <span class="file__upload_icon">
+                        <img src="images/pic.svg" alt="">
+                    </span>
+          <input type="file" name="file" class="file__input">
+          <span class="file__upload_text">Прикрепить фото</span>
+          <span class="file__upload_subtext">(не более 5)</span>
+        </label>
+        <!--                <div class="file__upload_result"></div>-->
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="hand-watch-two p-100 bg-grey-light">
+  <div class="container">
+    <div class="wrapper">
+      <div class="wrapper-img"><img src="images/img9.jpeg" alt=""></div>
+      <div class="wrapper-content">
+        <p>Сдать часы в ломбард и получить залог возможно в ломбарде <strong>“Мир часов”</strong>. Ломбард осуществят
+          выдачу денежных
+          средств под обеспечение в виде наручных часов известных производителей.</p>
+
+        <p>Получение денежных средств под залог часов в ломбарде займет не боле десяти минут. Выплата происходит
+          наличными или на карту клиента. В ломбарде так же можно сдать часы на выкуп, в таком случае сумма выплаты
+          будет более привлекательная. Гарантируем быстрый выход на сделку.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="hand-watch p-100">
+  <div class="container">
+    <h2><span>сдать часы в ломбард</span></h2>
+
+    <div class="wrapper">
+      <div class="wrapper-content">
+        <p>Мы принимаем под залог часы не только швейцарских производителей. Отправить часы на оценку в ломбард возможно
+          в режиме онлайн, для этого нужно заполнить форму и прикрепить несколько фотографий, оценка часов
+          в ломбарде занимает не более десяти минут, после чего будет озвучена предварительная сумма.</p>
+
+        <p>После оценки и согласования времени, необходимо приехать к нам в офис для встречи с экспертом. Осмотр изделия
+          занимает не более десяти минут, проверка документов и оплата ранее оговоренным способом. Сделали обращение и
+          работу ломбарда самой
+          простой и удобной.</p>
+      </div>
+      <div class="wrapper-img"><img src="images/img8.jpeg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="redemption-of-products bg-brown color-white p-100">
+  <div class="container">
+    <h2><span>выкупаем следующие изделия</span></h2>
+    <div class="box-text">
+      <p>Ломбард выкупает не только швейцарские часы, но и ювелирные украшения , а так же часовые аксессуары. Оценка
+        изделий так же занимает минимум времени. Оценка происходит по реальной рыночной цене. Учитываются все факторы,
+        которые могут повлиять на сумму изделия. <br>
+        Гарантируем анонимность и конфиденциальность данных при обращении в ломбард.</p>
+
+      <p>Выкупаем часовые аксессуары: виндеры, коробки, шкатулки, ремни и иные часовые аксессуары.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <div class="redemption-of-products__img"><img src="images/cat-product1.jpeg" alt=""></div>
+      </div>
+      <div class="col-25">
+        <div class="redemption-of-products__img"><img src="images/cat-product2.jpeg" alt=""></div>
+      </div>
+      <div class="col-50">
+        <div class="redemption-of-products__img img-max"><img src="images/cat-product3.jpeg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantage-of-cooperation">
+  <div class="container">
+    <h2><span>Преимущества сотрудничества с нами</span></h2>
+
+    <div class="row">
+      <div class="col-30 mb-30">
+        <div class="advantage-of-cooperation__box">
+          <div class="advantage-of-cooperation__icon"><img src="images/adv-icon1.svg" alt=""></div>
+          <p>Онлайн оценка</p>
+        </div>
+      </div>
+      <div class="col-30 mb-30">
+        <div class="advantage-of-cooperation__box">
+          <div class="advantage-of-cooperation__icon"><img src="images/adv-icon2.svg" alt=""></div>
+          <p>Моментальная выплата</p>
+        </div>
+      </div>
+      <div class="col-30 mb-30">
+        <div class="advantage-of-cooperation__box">
+          <div class="advantage-of-cooperation__icon"><img src="images/adv-icon3.svg" alt=""></div>
+          <p>Выезд эксперта </p>
+        </div>
+      </div>
+      <div class="col-30 mb-30">
+        <div class="advantage-of-cooperation__box">
+          <div class="advantage-of-cooperation__icon"><img src="images/adv-icon4.svg" alt=""></div>
+          <p>До 1000000$</p>
+        </div>
+      </div>
+      <div class="col-30 mb-30">
+        <div class="advantage-of-cooperation__box">
+          <div class="advantage-of-cooperation__icon"><img src="images/adv-icon5.svg" alt=""></div>
+          <p>Минимум документов</p>
+        </div>
+      </div>
+      <div class="col-30 mb-30">
+        <div class="advantage-of-cooperation__box">
+          <div class="advantage-of-cooperation__icon"><img src="images/adv-icon6.svg" alt=""></div>
+          <p>Анонимно</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews bg-brown color-white">
+  <div class="container">
+    <h2><span>отзывы о нашем ломбарде</span></h2>
+
+    <div class="reviews-slider w-100">
+      <div class="slide">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__ava"><img src="images/ava1.png" alt=""></div>
+            <div class="reviews-box__name">
+              <h3>Михаил Попов</h3>
+              <p>Москва</p>
+            </div>
+            <div class="rating"><p>4.5</p>
+              <div class="rating-icon"><img src="images/star.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>Оценка в вашем присутствии с использованием профессионального оборудования Оценка в вашем присутствии с
+              использованием профессионального оборудования</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__ava"><img src="images/ava2.png" alt=""></div>
+            <div class="reviews-box__name">
+              <h3>Анастасия</h3>
+              <p>Екатеринбург</p>
+            </div>
+            <div class="rating"><p>4.5</p>
+              <div class="rating-icon"><img src="images/star.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>Оценка в вашем присутствии с использованием профессионального оборудования Оценка в вашем присутствии с
+              использованием профессионального оборудования</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__ava"><img src="images/ava3.png" alt=""></div>
+            <div class="reviews-box__name">
+              <h3>Сергей Иванов</h3>
+              <p>Москва</p>
+            </div>
+            <div class="rating"><p>4.5</p>
+              <div class="rating-icon"><img src="images/star.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>Оценка в вашем присутствии с использованием профессионального оборудования Оценка в вашем присутствии с
+              использованием профессионального оборудования</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__ava"><img src="images/ava1.png" alt=""></div>
+            <div class="reviews-box__name">
+              <h3>Михаил Попов</h3>
+              <p>Москва</p>
+            </div>
+            <div class="rating"><p>4.5</p>
+              <div class="rating-icon"><img src="images/star.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>Оценка в вашем присутствии с использованием профессионального оборудования Оценка в вашем присутствии с
+              использованием профессионального оборудования</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-slider__nav"></div>
+  </div>
+</section>
+
+<div class="history-company p-100">
+  <div class="container">
+    <div class="wrapper-img"><img src="images/history-img.jpeg" alt=""></div>
+    <div class="wrapper-content">
+      <p>Часовой ломбард мир часов оказывает свои услуги с 2009 года. За долгий промежуток работы, нам доверили оценку и
+        выкуп более 9000 клиентов. Наша порядочность гарантирует ваше спокойствие.</p>
+
+      <p>Мы собрали полный спектр услуг и возможностей для вашего удобства. Более сотни отзывов наших клиентов, которые
+        воспользовались нашими услугами. В нашем ломбарде элитных часов вас ждет приятная обстановка и дружный
+        коллектив. Мы придерживаемся четкой корпоративной политики.</p>
+
+      <p>Многие клиенты после сделки снова возвращаются к нам.</p>
+    </div>
+  </div>
+</div>
+
+<section class="callback bg-brown color-white callback-page">
+  <div class="container">
+    <div class="callback__content">
+      <h2><span>Перезвоним Вам <br>за 30 секунд</span></h2>
+      <div class="callback__description">
+        Оставьте свой номер телефона и наш менеджер
+        свяжется с Вами в ближайшее время
+      </div>
+    </div>
+
+    <form method="post" class="form form__callback">
+
+      <label><input type="text" placeholder="+7 (___) ___ - __ - __" required name="phone"></label>
+
+      <button type="submit" class="btn btn-accent">Перезвоните мне</button>
+    </form>
+  </div>
+</section>
+
+<section class="company-services p-100">
+  <div class="container">
+    <h2><span>Ломбард оказывает следующие услуги:</span></h2>
+
+    <ul class="company-services-list">
+      <li>
+        <p>- Залог наручных часов</p>
+        <p>- Оценка часов</p>
+      </li>
+      <li>
+        <p>- Выкуп часов</p>
+        <p>- Скупка часов с обратным выкупом</p>
+      </li>
+      <li>
+        <p>- Выкуп ювелирных изделий</p>
+        <p>- Выкуп часовых аксессуаров</p>
+      </li>
+    </ul>
+
+    <div class="box-text">
+      <p>Гарантия лучшей цены, все изделия проходят полный осмотр квалифицированными специалистами с большим опытом как
+        в часовом, так и в ювелирном деле. Вы можете заказать обратный звонок для вашего удобства и мы свяжемся с вами.
+        Для оценки часов в режиме онлайн пожалуйста воспользуйтесь формой для отправки заявки, прикрепите фото и
+        ожидайте звонка менеджера.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+
+    <a href="/" class="logo">
+      <img src="images/logo2.svg" alt="">
+    </a>
+
+    <ul class="footer-menu">
+      <li><a href="#">Статьи</a></li>
+      <li><a href="#">Политика конфиденциальности</a></li>
+      <li><a href="#">Пользовательское соглашение</a></li>
+    </ul>
+
+    <div class="header__box header__box_phone">
+      <div class="header__box_icon">
+        <img src="images/phone-call.svg" alt="Продать часы">
+      </div>
+      <div class="phone-wrapper">
+        <a href="tel:+74951477778" class="phone">
+          <span class="phone__text">8 (495) 147-77-78</span>
+        </a>
+        <a href="tel:+79688889288" class="phone">
+          <span class="phone__text">8 (968) 888-92-88</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header__box header__box_address">
+      <div class="header__box_icon header__box_address_icon"><img src="images/maps-and-flags.svg" alt="адрес"></div>
+      <div class="header__box_address_text">г. Москва, Ленинградский
+        проспект, дом 76, к.1
+      </div>
+    </div>
+
+
+    <!--    <div class="copyright w-100">-->
+    <!--      <p>Copyright © 2020 Все права защищены. Любое копированание материала запрещено</p>-->
+    <!--    </div>-->
+  </div>
+</footer>
+
+<div class="modal__div" id="callback__modal">
+  <div class="modal__wrapper bg-brown color-white">
+    <span class="modal__close"></span>
+    <h2><span>Оценка онлайн Всего за 5 минут</span></h2>
+
+    <form method="post" class="form">
+      <label><input type="text" placeholder="Ваше имя*" required name="name"></label>
+
+      <label><input type="text" placeholder="+7 (___) ___ - __ - __*" required name="phone"></label>
+
+      <label><input type="text" placeholder="Бренд часов*" name="brand_watch" required></label>
+
+      <label><input type="text" placeholder="Модель часов / референс*" name="model_watch" required></label>
+
+      <label><select name="select">
+        <option value="Комплект" selected>Комплект</option>
+        <option value="Комплект">Комплект</option>
+        <option value="Комплект">Комплект</option>
+        <option value="Комплект">Комплект</option>
+      </select></label>
+
+
+      <div class="file__upload">
+        <label class="file__upload_label">
+                    <span class="file__upload_icon">
+                        <img src="images/camera.svg" alt="">
+                    </span>
+          <input type="file" name="file" class="file__input">Прикрепить фото (не больше 5)
+        </label>
+        <!--                <div class="file__upload_result"></div>-->
+      </div>
+
+      <div class="consent">
+        Отправляя форму, Вы соглашаетесь с <a href="politics.html" class="links-accent">пользовательским
+        соглашением</a>. Мы ответим в течении 5 минут
+      </div>
+
+      <button type="submit" class="btn btn-accent">Заказать оценку</button>
+    </form>
+  </div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
