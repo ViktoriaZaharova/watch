@@ -1,0 +1,232 @@
+@import "fonts"
+@import "vars"
+
+.video-box
+  max-width: 750px
+  height: 420px
+  width: 100%
+  margin: 0 auto
+
+  iframe
+    width: 100%
+    height: 100%
+
+.recommended
+  padding: 0 0 70px
+
+.product-card
+  height: 100%
+  width: 100%
+  cursor: pointer
+  transition: .3s ease
+  background: #fff
+  border: 2px solid #F1F2F2
+    radius: 5px
+  padding: 20px 15px 30px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+  &:hover
+    border: 2px solid #C7AB8E
+
+.product-card__img
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 284px
+
+  img
+    max-height: 100%
+
+.product-card__name
+  margin: 30px auto 20px
+  text-align: center
+  color: #828282
+  font-size: 16px
+  line-height: 18.75px
+  min-height: 57px
+
+  &:hover
+    color: #000
+
+.product-card__price
+  color: #C7AB90
+  font-size: 26px
+  font-weight: bold
+
+
+.characteristics-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.characteristics-box
+  max-width: 260px
+  width: 100%
+
+  li
+    margin: 0 0 15px
+
+    &:last-child
+      margin: 0
+
+  p
+    color: #828282
+
+.product
+  padding: 80px 0
+
+  .container
+    align-items: flex-start
+
+  h1
+    font-size: 27px
+
+.product-images
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.product-preview
+  width: 98px
+  padding: 0 10px 0 0
+
+.product-gallery
+  width: 457px
+
+.product-preview__item
+  border: 2px solid #F1F2F2
+    radius: 5px
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 10px
+  height: 90px
+  width: 100%
+  cursor: pointer
+
+.product-gallery__item
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 500px
+  border: 2px solid #F1F2F2
+  border-radius: 5px
+  background: #fff
+  padding: 3px
+  overflow: hidden
+
+  img
+    max-height: 100%
+
+.product-information
+  width: calc(100% - 555px)
+  padding: 0 0 0 30px
+  .characteristics-box
+    max-width: none
+    margin: 40px 0 0
+    li
+      display: flex
+      align-items: center
+    a
+      display: inline-block
+      text-decoration: underline
+      color: #000
+    p
+      margin: 0 5px 0 0
+
+.price-wrapper
+  display: flex
+  align-items: flex-end
+  width: 100%
+  margin: 40px 0 20px
+  line-height: 19px
+  p
+    color: #828282
+    margin: 0 10px 5px 0
+
+.price
+  font-size: 36px
+  font-weight: bold
+  color: #C7AB90
+  line-height: 42px
+
+.title-mobile
+  width: 100%
+  display: none
+  margin: 0 0 20px
+
+
+@media (max-width: 992px)
+  .product-gallery
+    width: 320px
+
+  .product-information
+    width: calc(100% - 420px)
+
+@media (max-width: 768px)
+  .characteristics-box
+    margin: 0 0 30px
+
+  .product-information
+    width: 100%
+    padding: 0
+    margin: 30px 0 0
+    h1
+      display: none
+    .characteristics-box
+      margin: 30px 0 0
+      &:first-child
+        margin: 0
+
+  .title-mobile
+    display: block
+
+  .product
+    padding: 50px 0
+
+  .product-images
+    width: 100%
+    justify-content: center
+
+  .product-gallery
+    width: calc(100% - 98px)
+
+@media (max-width: 480px)
+  .video-box
+    height: 300px
+
+  .product h1
+    font-size: 24px
+
+  .product-gallery
+    width: 100%
+
+  .product-gallery__item
+    height: 300px
+
+  .product-preview
+    padding: 0
+    margin: 10px 0 0
+    width: 100%
+    order: 1
+
+  .product-preview__item
+    margin: 0 auto
+    width: calc(100% - 10px)
+
+  .price-wrapper
+    margin: 30px 0 10px
+
+  .price
+    font-size: 30px
+    line-height: normal
+
+  .product-information .characteristics-box li
+    flex-wrap: wrap

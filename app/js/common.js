@@ -74,3 +74,31 @@ $('.reviews-slider').slick({
         }
     ]
 });
+
+$('.product-preview').slick({
+    slidesToShow: 5,
+    vertical: true,
+    focusOnSelect: true,
+    asNavFor: '.product-gallery',
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 480,
+            settings: {
+                vertical: false,
+                slidesToShow: 3,
+            }
+        }
+    ]
+});
+
+$('.product-gallery').slick({
+    slidesToShow: 1,
+    asNavFor: '.product-preview',
+    arrows: false,
+    fade: true
+});
+
+if ($(".product h1").length){
+    $('.product h1').clone().appendTo('.title-mobile');
+}
