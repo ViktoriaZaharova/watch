@@ -102,3 +102,63 @@ $('.product-gallery').slick({
 if ($(".product h1").length){
     $('.product h1').clone().appendTo('.title-mobile');
 }
+
+// accordeon
+function accordeon() {
+    var panel = $('.panel_heading');
+
+    $('.panel_heading').find('.block_hover').slideUp();
+
+    if (panel.hasClass('in')) {
+        $('.in').find('.block_hover').slideDown();
+    }
+
+    $('.panel_heading .block_title').on('click', function () {
+        $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+    });
+}
+
+accordeon();
+
+// hidden list > 5
+$('.panel_heading .list-checkbox').each(function () {
+    if ($(this).find('li').length > 10) {
+        $(this).find('li').slice(10).hide();
+        $(this).parent('.block_hover').append('<a href="#" class="btn-view"><span class="btn-view__text">Показать все</span></a>');
+    }
+});
+
+// hidden list > 10
+
+// show list all
+$('.panel_heading .btn-view').on('click', function(e){
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parent().find('.list-checkbox li');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.hide();
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать все');
+
+        content.slideUp();
+    }
+});
+// show list all
+
+$('.btn-filter').on('click', function (e) {
+    e.preventDefault();
+   $('.sidebar').fadeToggle();
+});
+
+$('.sidebar-close').on('click', function (e) {
+    e.preventDefault();
+    $('.sidebar').fadeOut();
+});
