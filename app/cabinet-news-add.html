@@ -56,28 +56,52 @@
 
   <div class="cabinet-content">
     <a href="#" class="btn-sidebar"><img src="images/settings.png" alt=""></a>
-    <div class="w-100 cabinet-content-nav">
-      <div class="row">
-        <div class="col-30 mb-20">
-          <a href="cabinet.html" class="cabinet-navigation-links bg-gradient-blue"><span>Главная</span></a>
-        </div>
-        <div class="col-30 mb-20">
-          <a href="#" class="cabinet-navigation-links bg-gradient-pink"><span>статистика</span></a>
-        </div>
-        <div class="col-30 mb-20">
-          <a href="#" class="cabinet-navigation-links bg-gradient-light-blue"><span>Аккаунты</span></a>
-        </div>
-        <div class="col-30 mb-20">
-          <a href="#" class="cabinet-navigation-links bg-gradient-orange"><span>проэкты</span></a>
-        </div>
-        <div class="col-30 mb-20">
-          <a href="#" class="cabinet-navigation-links bg-gradient-blue2"><span>приглашения</span></a>
-        </div>
-        <div class="col-30 mb-20">
-          <a href="#" class="cabinet-navigation-links bg-gradient-violet"><span>выход</span></a>
-        </div>
+
+    <ul class="breadcrumb">
+      <li><a href="cabinet.html">Главная</a></li>
+      <li><a href="cabinet-news.html">Статьи</a></li>
+      <li><span>Добавить статью</span></li>
+    </ul>
+
+    <h1>Добавить статью</h1>
+
+    <form method="post" class="form-cabinet">
+      <div class="form-col">
+        <label>
+          <span class="input-text">Тайтл</span>
+          <input type="text" name="name">
+        </label>
+        <label>
+          <span class="input-text">Дискрипшн</span>
+          <input type="text" name="description">
+        </label>
+        <label>
+          <span class="input-text">Категория статьи</span>
+          <select name="select" class="select">
+            <option value="Основной раздел">Основной раздел</option>
+            <option value="Основной раздел">Основной раздел</option>
+            <option value="Основной раздел">Основной раздел</option>
+          </select>
+        </label>
       </div>
-    </div>
+
+      <div class="file-add-wrapper">
+        <div class="input-text">Изображение</div>
+        <label class="label-file">
+          <input type="file" name="file" class="input-file">
+          <span class="input-file-text">Выберите файл</span>
+        </label>
+      </div>
+
+      <div class="w-100">
+        <div class="text-window"><img src="images/text.png" alt=""></div>
+      </div>
+
+      <div class="w-100">
+        <button type="submit" class="btn btn-accent">Добавить</button>
+      </div>
+    </form>
+
   </div>
 </div>
 

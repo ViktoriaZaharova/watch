@@ -999,6 +999,14 @@ footer {
 .mb-20 {
   margin-bottom: 20px; }
 
+.col-45 {
+  width: 45%;
+  padding: 0 10px; }
+
+.col-55 {
+  width: 55%;
+  padding: 0 10px; }
+
 .brands__box {
   margin: 0 0 30px;
   border: solid 2px #c7ab8e;
@@ -2748,7 +2756,18 @@ footer {
 
 .td {
   padding: 10px;
-  background: #fff; }
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .thead .td {
   color: #5C5C5C;
@@ -2835,6 +2854,102 @@ footer {
     -webkit-filter: invert(1);
             filter: invert(1); }
 
+.table-watch .td-name-news, .table-watch .td-description-news {
+  width: 36%; }
+
+.td-price {
+  width: 16%; }
+
+.td-name-clients {
+  width: 21%; }
+
+.td-phone-clients {
+  width: 17%; }
+
+.td-watch, .td-ref, .td-set {
+  width: 16%; }
+
+.td-date {
+  width: 10%; }
+
+.phone-clients {
+  color: #000; }
+
+.form-cabinet {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form-cabinet button {
+    margin: 20px 0 0; }
+  .form-cabinet .form-col {
+    margin: 0 30px 0 0;
+    max-width: 50%;
+    width: 100%; }
+    .form-cabinet .form-col:last-child {
+      margin: 0; }
+    .form-cabinet .form-col:first-child {
+      max-width: 43%; }
+  .form-cabinet input, .form-cabinet select {
+    border: 1px solid #C4C4C4;
+      border-radius: 5px;
+    padding: 0 25px;
+    color: #373737;
+    font-size: 16px;
+    font-family: "roboto", sans-serif; }
+    .form-cabinet input::-webkit-input-placeholder, .form-cabinet select::-webkit-input-placeholder {
+      color: #373737; }
+    .form-cabinet input::-moz-placeholder, .form-cabinet select::-moz-placeholder {
+      color: #373737; }
+    .form-cabinet input::-ms-input-placeholder, .form-cabinet select::-ms-input-placeholder {
+      color: #373737; }
+    .form-cabinet input::placeholder, .form-cabinet select::placeholder {
+      color: #373737; }
+    .form-cabinet input:focus, .form-cabinet select:focus {
+      border: 1px solid #3F3F3F; }
+  .form-cabinet select {
+    background: #fff url("../images/select.svg") no-repeat 95% center;
+      background-size: 13px; }
+
+.input-file {
+  display: none; }
+
+.label-file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #C7AB8E;
+  cursor: pointer;
+  border: 1px solid #C7AB8E;
+    border-radius: 5px;
+  height: 60px; }
+
+.file-add-wrapper {
+  max-width: 263px;
+  width: 100%; }
+
+.input-text {
+  width: 100%;
+  display: block;
+  margin: 0 0 10px;
+  color: #5C5C5C; }
+
+.text-window {
+  max-width: 847px;
+  width: 100%;
+  border: 1px solid #C4C4C4; }
+
 @media only screen and (max-width: 1440px) {
   .cabinet-wrapper {
     padding: 0; }
@@ -2887,11 +3002,27 @@ footer {
   .tr {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .td-name-news, .td-title-news, .td-photo-news, .td-actions-news {
+  .td-name-news, .td-title-news, .td-photo-news, .td-actions-news, .td-price, .table-watch .td-name-news, .table-watch .td-description-news, .td-date, .td-name-clients, .td-phone-clients, .td-watch, .td-ref {
     width: 50%; }
+  .td-set {
+    width: 100%; }
   .td-description-news {
     width: 100%; }
   .tbody .td {
     margin-right: 0; }
-    .tbody .td:nth-child(2), .tbody .td:last-child {
-      border-left: none; } }
+    .tbody .td:nth-child(2), .tbody .td:last-child, .tbody .td:nth-child(4) {
+      border-left: none; }
+  .tbody .td-date {
+    border: 1px solid #C4C4C4; }
+  .form-cabinet .form-col {
+    margin: 0; }
+  .label-file {
+    height: 50px; }
+  .form-cabinet .form-col:first-child {
+    max-width: none; } }
+
+@media only screen and (max-width: 576px) {
+  .form-cabinet .col-30 {
+    width: 100%; }
+  .col-45, .col-55 {
+    width: 100%; } }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мир часов</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/catalog.css">
+
+</head>
+
+<body>
+
+<div class="cabinet-wrapper">
+  <div class="cabinet-sidebar">
+    <h3>управление</h3>
+    <ul class="cabinet-menu">
+      <li class="cabinet-menu-item">
+        <a href="cabinet-request.html" class="cabinet-menu-links">
+          <span class="cabinet-menu__icon"><img src="images/mail.svg" alt=""></span>
+          <span class="cabinet-menu__text">Заявки</span>
+        </a>
+      </li>
+      <li class="cabinet-menu-item">
+        <a href="cabinet-watch.html" class="cabinet-menu-links">
+          <span class="cabinet-menu__icon"><img src="images/watch.svg" alt=""></span>
+          <span class="cabinet-menu__text">Часы</span>
+        </a>
+        <a href="cabinet-watch-add.html" class="links-add">+ Добавить часы</a>
+      </li>
+      <li class="cabinet-menu-item">
+        <a href="cabinet-news.html" class="cabinet-menu-links">
+          <span class="cabinet-menu__icon"><img src="images/doc.svg" alt=""></span>
+          <span class="cabinet-menu__text">Статьи</span>
+        </a>
+        <a href="cabinet-news-add.html" class="links-add">+ Добавить статью</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cabinet-content">
+    <a href="#" class="btn-sidebar"><img src="images/settings.png" alt=""></a>
+
+    <ul class="breadcrumb">
+      <li><a href="cabinet.html">Главная</a></li>
+      <li><a href="cabinet-news.html">Статьи</a></li>
+      <li><span>Добавить часы</span></li>
+    </ul>
+
+    <h1>Добавить часы</h1>
+
+    <form method="post" class="form-cabinet">
+      <div class="row">
+        <div class="col-45">
+          <label>
+            <span class="input-text">Часы</span>
+            <input type="text" name="watch">
+          </label>
+        </div>
+
+        <div class="col-55">
+          <label>
+            <span class="input-text">Описание</span>
+            <input type="text" name="description">
+          </label>
+        </div>
+
+        <div class="col-45">
+          <label>
+            <span class="input-text">Категория</span>
+            <select name="select" class="select">
+              <option value="Основной раздел">Основной раздел</option>
+              <option value="Основной раздел">Основной раздел</option>
+              <option value="Основной раздел">Основной раздел</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-55">
+          <label>
+            <span class="input-text">Реф</span>
+            <input type="text" name="ref">
+          </label>
+        </div>
+
+        <div class="col-45">
+          <label>
+            <span class="input-text">Бренд</span>
+            <select name="select" class="select">
+              <option value="-Выберите бренд">-Выберите бренд</option>
+              <option value="-Выберите бренд">-Выберите бренд</option>
+              <option value="-Выберите бренд">-Выберите бренд</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-55">
+          <label>
+            <span class="input-text">Статус</span>
+            <select name="select" class="select">
+              <option value="-Выберите статус">-Выберите статус</option>
+              <option value="-Выберите статус">-Выберите статус</option>
+              <option value="-Выберите статус">-Выберите статус</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Цена</span>
+            <input type="text" name="price">
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Диаметр</span>
+            <input type="text" name="diameter">
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Пол</span>
+            <select name="select" class="select">
+              <option value="-Выберите пол">-Выберите пол</option>
+              <option value="-Выберите пол">-Выберите пол</option>
+              <option value="-Выберите пол">-Выберите пол</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Комплект</span>
+            <select name="select" class="select">
+              <option value="-Выберите комплект">-Выберите комплект</option>
+              <option value="-Выберите комплект">-Выберите комплект</option>
+              <option value="-Выберите комплект">-Выберите комплект</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Состояние</span>
+            <select name="select" class="select">
+              <option value="-Выберите состояние">-Выберите состояние</option>
+              <option value="-Выберите состояние">-Выберите состояние</option>
+              <option value="-Выберите состояние">-Выберите состояние</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Материал корпуса</span>
+            <select name="select" class="select">
+              <option value="-Выберите материал">-Выберите материал</option>
+              <option value="-Выберите материал">-Выберите материал</option>
+              <option value="-Выберите материал">-Выберите материал</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-30">
+          <label>
+            <span class="input-text">Механизм</span>
+            <select name="select" class="select">
+              <option value="-Выберите механизм">-Выберите механизм</option>
+              <option value="-Выберите механизм">-Выберите механизм</option>
+              <option value="-Выберите механизм">-Выберите механизм</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="col-30">
+          <div class="file-add-wrapper">
+            <div class="input-text">Прикрепите изображение</div>
+            <label class="label-file">
+              <input type="file" name="file" class="input-file">
+              <span class="input-file-text">Выберите файл</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <button type="submit" class="btn btn-accent">Добавить</button>
+    </form>
+
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

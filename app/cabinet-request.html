@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мир часов</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/catalog.css">
+
+</head>
+
+<body>
+
+<div class="cabinet-wrapper">
+  <div class="cabinet-sidebar">
+    <h3>управление</h3>
+    <ul class="cabinet-menu">
+      <li class="cabinet-menu-item">
+        <a href="cabinet-request.html" class="cabinet-menu-links">
+          <span class="cabinet-menu__icon"><img src="images/mail.svg" alt=""></span>
+          <span class="cabinet-menu__text">Заявки</span>
+        </a>
+      </li>
+      <li class="cabinet-menu-item">
+        <a href="cabinet-watch.html" class="cabinet-menu-links">
+          <span class="cabinet-menu__icon"><img src="images/watch.svg" alt=""></span>
+          <span class="cabinet-menu__text">Часы</span>
+        </a>
+        <a href="cabinet-watch-add.html" class="links-add">+ Добавить часы</a>
+      </li>
+      <li class="cabinet-menu-item">
+        <a href="cabinet-news.html" class="cabinet-menu-links">
+          <span class="cabinet-menu__icon"><img src="images/doc.svg" alt=""></span>
+          <span class="cabinet-menu__text">Статьи</span>
+        </a>
+        <a href="cabinet-news-add.html" class="links-add">+ Добавить статью</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cabinet-content">
+    <a href="#" class="btn-sidebar"><img src="images/settings.png" alt=""></a>
+
+    <ul class="breadcrumb">
+      <li><a href="cabinet.html">Главная</a></li>
+      <li><span>Заявки</span></li>
+    </ul>
+
+    <h1>Заявки</h1>
+
+
+    <div class="table table-news table-request w-100">
+      <div class="thead">
+        <div class="tr">
+          <div class="td td-name-clients">Имя клиента</div>
+          <div class="td td-phone-clients">Телефон клиента</div>
+          <div class="td td-watch">Часы</div>
+          <div class="td td-ref">Реф</div>
+          <div class="td td-set">Комплект</div>
+          <div class="td td-date">Дата</div>
+          <div class="td td-actions-news">Действия</div>
+        </div>
+      </div>
+
+      <div class="tbody">
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+           <p>Carnival Grand <br>
+             Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td td-name-clients">
+            <p>Иван Иванов</p>
+          </div>
+          <div class="td td-phone-clients">
+            <a href="tel:+79651234567" class="phone-clients">+7 (965) 123 - 45 - 67</a>
+          </div>
+          <div class="td td-watch">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-ref">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-set">
+            <p>Carnival Grand <br>
+              Brown</p>
+          </div>
+          <div class="td td-date">
+            <p>30.04.21</p>
+          </div>
+          <div class="td td-actions-news">
+            <div class="btn-group">
+              <a href="#" class="btn-edit"><img src="images/view.svg" alt=""></a>
+              <a href="#" class="btn-remove"><img src="images/remove.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
