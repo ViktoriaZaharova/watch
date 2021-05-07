@@ -162,3 +162,8 @@ $('.sidebar-close').on('click', function (e) {
     e.preventDefault();
     $('.sidebar').fadeOut();
 });
+
+$('.btn-sidebar').on('click', function (e) {
+    e.preventDefault();
+    $('.cabinet-sidebar').fadeToggle();
+});
